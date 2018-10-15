@@ -17,6 +17,11 @@ namespace BitManipulation
         /// <param name="numbIn">Is inсomming subnumber</param>
         /// <param name="indI">Index i</param>
         /// <param name="indJ">Index j</param>
+        /// <exception cref=ArgumentException>
+        /// Thrown if index i is greate than index j
+        /// Thrown if index j out of range digits of numbers
+        /// Thrown if one or both indexes lower then 0
+        /// </exception>
         /// <returns>resulting number</returns>
         public static int InsertNumber(int numbSource, int numbIn, int indI, int indJ)
         {   
